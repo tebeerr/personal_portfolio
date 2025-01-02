@@ -1,8 +1,10 @@
 import {
-  aibs, aibsAssurance, aibsMobile, aibsPartenaire,
+  aibs,
+  aibsAssurance,
+  aibsMobile,
+  aibsPartenaire,
   angular,
   backend,
-  carrent,
   cofat,
   comar,
   creator,
@@ -13,14 +15,11 @@ import {
   githubBlack,
   html,
   javascript,
-  jobit,
-  mobile,
   mongodb,
   nodejs,
   ont,
   reactjs,
   tailwind,
-  tripguide,
   typescript,
   web,
 } from "../assets";
@@ -45,10 +44,10 @@ const services = [
     title: "Web Developer",
     icon: web,
   },
-  {
-    title: "Angular Developer",
-    icon: mobile,
-  },
+  // {
+  //   title: "Angular Developer",
+  //   icon: mobile,
+  // },
   {
     title: "Backend Developer",
     icon: backend,
