@@ -250,7 +250,7 @@ const projects = [
       },
     ],
     image: aibsMobile,
-    source_code_link: "https://github.com/AzizSaidani",
+    source_code_link: "https://play.google.com/store/apps/details?id=com.sg.aibs_partenaire_mobile&hl=fr&pli=1",
   },
 
 ];
