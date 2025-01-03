@@ -14,7 +14,7 @@ import {
   git,
   githubBlack,
   html,
-  javascript,
+  javascript, mobile,
   mongodb,
   nodejs,
   ont,
@@ -43,6 +43,10 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
+  },
+  {
+    title: "Unit Tester",
+    icon: mobile,
   },
   {
     title: "Backend Developer",
