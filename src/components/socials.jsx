@@ -27,7 +27,7 @@ const SocialLinks = () => {
                 </div>
 
                 <div className="text-center mt-6 text-gray-400 text-sm">
-                    © {new Date().getFullYear()} Mohamed Aziz Saidani. All rights reserved.
+                    © {new Date().getFullYear()} Ramzi Teber. All rights reserved.
                 </div>
             </div>
         </footer>
