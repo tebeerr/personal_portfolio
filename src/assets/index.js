@@ -20,12 +20,14 @@ import typescript from "./tech/typescript.png";
 import comar from "./company/comar.png";
 import cofat from "./company/cofat.png";
 import ont from "./company/ont.png";
+import pneu from "./company/pneu.png";
 import aibs from "./company/aibs.png";
 import flutter from "./tech/flutter.png";
 import firebase from "./tech/firebase.png";
 import angular from "./tech/angular.png";
 import githubBlack from "./tech/github-black.png";
 import aibsAssurance from "./aibs-assurance.png";
+import logisticWeb from "./logisticWeb.png";
 import aibsPartenaire from "./aibs-partenaire.png";
 import aibsMobile from "./aibs-mobile.png";
 import link from "./link.svg";
@@ -36,38 +38,40 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  cofat,
+    cofat,
     ont,
+    pneu,
     aibs,
     flutter,
     firebase,
     angular,
     link,
-  linkedIn,
-  aibsAssurance,
-  aibsPartenaire,
-  aibsMobile,
-  githubBlack,
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  tailwind,
-  typescript,
-  carrent,
-  jobit,
-  comar,
-  tripguide,
+    linkedIn,
+    aibsAssurance,
+    logisticWeb,
+    aibsPartenaire,
+    aibsMobile,
+    githubBlack,
+    logo,
+    backend,
+    creator,
+    mobile,
+    web,
+    github,
+    menu,
+    close,
+    css,
+    figma,
+    git,
+    html,
+    javascript,
+    mongodb,
+    nodejs,
+    reactjs,
+    tailwind,
+    typescript,
+    carrent,
+    jobit,
+    comar,
+    tripguide,
 };

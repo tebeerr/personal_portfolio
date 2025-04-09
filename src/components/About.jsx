@@ -1,70 +1,66 @@
 import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
-import { styles } from "../styles";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import {styles} from "../styles";
+import {services} from "../constants";
+import {SectionWrapper} from "../hoc";
+import {fadeIn, textVariant} from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+const ServiceCard = ({index, title, icon}) => (
+    <Tilt className='xs:w-[250px] w-full'>
+        <motion.div
+            variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+            className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+        >
+            <div
+                options={{
+                    max: 45,
+                    scale: 1,
+                    speed: 450,
+                }}
+                className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+            >
+                <img
+                    src={icon}
+                    alt='web-development'
+                    className='w-16 h-16 object-contain'
+                />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
+                <h3 className='text-white text-[20px] font-bold text-center'>
+                    {title}
+                </h3>
+            </div>
+        </motion.div>
+    </Tilt>
 );
 
 const About = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+    return (
+        <>
+            <motion.div variants={textVariant()}>
+                <p className={styles.sectionSubText}>Introduction</p>
+                <h2 className={styles.sectionHeadText}>Overview.</h2>
+            </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-2xl leading-[30px]'
-      >
-          I'm a skilled software developer with experience in Dart,
-          TypeScript,
-          and JavaScript, and expertise in frameworks like Angular,
-          Node.js, and Flutter. I have a strong command of MongoDB and all Firebase tools,
-          including Firebase Database, Functions, and Storage. Additionally,
-          I have experience working with Azure and Google Cloud Console.
-          I'm a quick learner and collaborate closely with clients to create efficient,
-          scalable, and user-friendly solutions that solve real-world problems.
-          Let's work together to bring your ideas to life!
-      </motion.p>
+            <motion.p
+                variants={fadeIn("", "", 0.1, 1)}
+                className='mt-4 text-secondary text-[17px] max-w-2xl leading-[30px]'
+            >
+                I'm skilled Full-Stack developer with a passion, I have a strong expertise in web and mobile development, with a
+                In-depth analysis of Angular, Flutter, Firebase and SQL/NoSQL data bases. I developed efficient
+                solutions, optimized microservices architectures and integrated unit tests to ensure robustness of
+                applications. Engaged in continuous learning, I am always looking for innovations.and new technologies
+                to design efficient and scalable solutions.
+            </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10  justify-center items-center'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
-    </>
-  );
+            <div className='mt-20 flex flex-wrap gap-10  justify-center items-center'>
+                {services.map((service, index) => (
+                    <ServiceCard key={service.title} index={index} {...service} />
+                ))}
+            </div>
+        </>
+    );
 };
 
 export default SectionWrapper(About, "about");
